@@ -14,6 +14,7 @@ export const Header = () => {
                     <a href="#" className="header__link">blog</a>
                 </nav>
                 <img src={ searchHeartCart } alt="" className="header__nav" />
+        
             </div>
         </header>
     )
