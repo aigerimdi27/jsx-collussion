@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../assets/images/YOUR LOGO.png'
 import searchHeartCart from '../assets/images/search HEART shopping-cart.png'
 export const Header = () => {
@@ -6,12 +7,12 @@ export const Header = () => {
             <div className="container">
                 <img src={ logo } alt="" className='header__logo'/>
                 <nav className="header__menu">
-                    <a href="#" className="header__link">home</a>
-                    <a href="#" className="header__link">shop</a>
-                    <a href="#" className="header__link">lookbook</a>
-                    <a href="#" className="header__link">features</a>
-                    <a href="#" className="header__link">pages</a>
-                    <a href="#" className="header__link">blog</a>
+                    <Link className="header__link" to="/">home</Link>
+                    <Link className="header__link" to="/shop">shop</Link>
+                    <Link className="header__link" to="/lookbook">lookbook</Link>
+                    <Link className="header__link" to="/features">features</Link>
+                    <Link className="header__link" to="/pages">pages</Link>
+                    <Link className="header__link" to="/blog">blog</Link>
                 </nav>
                 <img src={ searchHeartCart } alt="" className="header__nav" />
         
